@@ -1,1 +1,1 @@
- 
+ variable "c-public-ip" {}
