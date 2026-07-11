@@ -8,6 +8,14 @@ terraform {
 
   }
 
+  backend "azurerm" {
+    resource_group_name  = "rg-backend-block"
+    storage_account_name = "backendstate151988"
+    container_name       = "statefile"
+    key                  = "terraform.statefile"
+
+  }
+
 
 }
 
